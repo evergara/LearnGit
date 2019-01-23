@@ -1,6 +1,3 @@
-Git
---------------------------------------------------------
+# Aprendiendo Git Beginning
 
-Aprendiendo git 
-
-git init
+## Definicion

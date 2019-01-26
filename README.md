@@ -44,3 +44,59 @@ Esto nos lleva a las tres secciones principales de un proyecto de Git: el direct
 - **git diff:** Ver los cambios realizados en un archivo
 - **git init:** sea un repositorio vacío de Git
 - **git clone:** El comando 'git clone` es en realidad una especie de envoltura alrededor de varios otros comandos. Éste crea un nuevo directorio, entra en él y ejecuta git init para que sea un repositorio vacío de Git, añade uno remoto (git remote add) hacia la dirección URL que se le pasa (por defecto llamado origin), ejecuta un git fetch de ese repositorio remoto y después activa el último commit en el directorio de trabajo con git checkout.
+
+
+
+# Uso de Git
+
+Despues de saber fundamentos genrales de git, pasaremos a la accion con git. Debes instalar git en la maquina personal de trabajo, para esto hay buenos turtoriales en internet, asi que este paso lo omiteriremos.
+
+## Configurar Git
+
+Una vez instalado nuestro cliente Git, lo primero que tenemos que hacer es configurar nuestro nombre de usuario y dirección de correo electrónico.
+
+Si utilizamos la opción —global, esto solo lo tenemos que hacer una vez, puesto que a partir de entonces lo tomará por defecto. Así por ejemplo,
+
+```
+git config --global user.name "TuNombreAUsar"
+git config --global user.email corre@micorreo.com
+```
+
+Si en un proyecto concreto queremos utilizar otro usuario o email, lo que debemos hacer es no añadir la opción —global.
+
+Estos dos parámetros son importantes porque las confirmaciones de cambios utilizan esta información.
+
+El resto de parámetros a configurar ya son opcionales. Algunos que te pueden ser de utilidad son:
+
+- El editor de texto. En mi caso particular utilizo nano cuando edito en el emulador de terminal:
+```
+git config --global core.editor nano
+```
+
+- Herramienta de diferencias. La herramienta de diferencias (que comentaremos mas adelante) es la que se encarga para resolver conflictos de unión:
+
+```
+gif config --global merge.tool vimdiff
+```
+ 
+Por último si quieres ver tu configuración, puedes ejecutar la siguiente orden en el emulador de terminal:
+
+```
+git config --list
+```
+
+## Repositorio git
+Una vez de instalado y configurado Git, ahora el turno es crear nuestro primer repositorio.
+
+######  Crear Repositorio
+para crear un repositorio tenemos dos opciones.
+- **Crear un repositorio de cero**
+- **Clonar un repositorio**
+######  Subir cambios
+######  Crear Ramas
+######  Cambiar de Ramas
+######  Diff
+
+
+
+
